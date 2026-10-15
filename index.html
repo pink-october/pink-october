@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ar"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pink October Awareness</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Lora:ital,wght@0,500;0,700;1,500&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+:root{--bg:#fff0f5;--paper:#ffffff;--blush:#ffd6e5;--rose:#f48fb1;--pink:#e91e63;--deep:#880e4f;--ink:#4a1030;--muted:#8a4a68;--ar-display:"Noto Kufi Arabic",Tahoma,sans-serif;--ar-body:"IBM Plex Sans Arabic",Tahoma,sans-serif;--en-display:"Lora",Georgia,serif;--en-body:"Nunito Sans",system-ui,sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--en-body);line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding:20px 16px 48px;display:flex;flex-direction:column;gap:22px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.pair>*{min-width:0}
+.en{direction:ltr;text-align:left}
+.ar{direction:rtl;text-align:right;font-family:var(--ar-body);font-size:1.05em}
+@media (max-width:720px){.pair{grid-template-columns:1fr;gap:14px}.pair .ar{order:-1}.pair .en{border-top:1px dashed var(--rose);padding-top:14px}}
+h1,h2,h3{text-wrap:balance;margin:0;color:var(--deep);line-height:1.3}
+.en h1,.en h2{font-family:var(--en-display)}
+.ar h1,.ar h2{font-family:var(--ar-display)}
+h2{font-size:1.45rem}
+p{margin:.4em 0}
+ul{margin:.5em 0;padding-inline-start:1.2em}
+li{margin:.3em 0}
+li::marker{color:var(--pink)}
+.hero{background:linear-gradient(160deg,#ff8fb8 0%,#e91e63 60%,#c2185b 100%);color:#fff;border-radius:28px;padding:28px 24px;position:relative;overflow:hidden}
+.hero h1{color:#fff;font-size:clamp(1.6rem,4.5vw,2.4rem)}
+.hero p{color:#ffe4ee}
+.hero .ribbon{display:block;margin:0 auto 10px;width:96px;height:auto}
+.hero .petals{position:absolute;inset:0;pointer-events:none;opacity:.25}
+.hero .pair{position:relative}
+.tag{display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:2px 12px;font-size:.8rem;letter-spacing:.06em;margin-bottom:8px}
+.card{background:var(--paper);border-radius:22px;padding:22px;box-shadow:0 6px 24px rgba(233,30,99,.08)}
+.sectionhead{display:flex;justify-content:center;color:var(--pink)}
+.sectionhead svg{width:34px;height:34px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.stat{background:var(--blush);border-radius:18px;padding:14px;text-align:center}
+.stat b{display:block;font-family:var(--en-display);font-size:1.7rem;color:var(--deep)}
+.stat span{font-size:.85rem;color:var(--muted);display:block}
+.stat .arl{font-family:var(--ar-body);direction:rtl}
+@media (max-width:520px){.stats{grid-template-columns:1fr}}
+.note{font-size:.8rem;color:var(--muted);text-align:center;margin-top:8px}
+.art{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.art figure{margin:0;background:var(--blush);border-radius:18px;padding:12px;text-align:center}
+.art svg{width:100%;height:auto;max-height:130px}
+.art figcaption{font-size:.85rem;color:var(--deep);font-weight:600}
+.art figcaption .a{display:block;font-family:var(--ar-body);direction:rtl}
+@media (max-width:520px){.art{grid-template-columns:1fr 1fr}.art figure:last-child{grid-column:1/-1}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{background:var(--blush);color:var(--deep);border-radius:999px;padding:4px 12px;font-size:.88rem}
+.sched{width:100%;border-collapse:collapse;font-size:.92rem;margin-top:8px}
+.sched td{padding:8px 6px;border-bottom:1px solid var(--blush);vertical-align:top}
+.sched td:first-child{font-weight:700;color:var(--pink);white-space:nowrap}
+.links{display:grid;gap:8px;margin-top:8px}
+.links a{display:flex;justify-content:space-between;gap:10px;align-items:center;text-decoration:none;color:var(--deep);background:var(--bg);border:1px solid var(--blush);border-radius:14px;padding:10px 14px;font-weight:600}
+.links a small{color:var(--muted);font-weight:400}
+.linkhead{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--pink);font-weight:700;margin-top:14px}
+.ar .linkhead{letter-spacing:0}
+.optional{display:inline-block;background:var(--blush);color:var(--deep);border-radius:999px;padding:1px 10px;font-size:.8rem;font-weight:600}
+.btn{display:inline-block;background:var(--pink);color:#fff;text-decoration:none;border-radius:999px;padding:12px 28px;font-weight:700;font-family:var(--ar-body),var(--en-body)}
+footer{text-align:center;color:var(--muted);font-size:.85rem}
+footer .a{font-family:var(--ar-body)}
+</style>
+</head><body>
+<div class="wrap">
+
+<header class="hero">
+<svg class="petals" viewBox="0 0 400 200" preserveAspectRatio="none"><g fill="#fff"><circle cx="30" cy="40" r="10"/><circle cx="370" cy="30" r="14"/><circle cx="340" cy="170" r="9"/><circle cx="60" cy="170" r="16"/><circle cx="200" cy="15" r="6"/><circle cx="250" cy="185" r="7"/></g></svg>
+<svg class="ribbon" viewBox="0 0 100 140"><path d="M50 10c-16 0-26 14-26 30 0 14 8 26 18 40L18 128l16 6 16-32 16 32 16-6-24-48c10-14 18-26 18-40 0-16-10-30-26-30zm0 14c8 0 12 8 12 16 0 9-5 18-12 28-7-10-12-19-12-28 0-8 4-16 12-16z" fill="#fff"/><path d="M50 24c8 0 12 8 12 16 0 9-5 18-12 28-7-10-12-19-12-28 0-8 4-16 12-16z" fill="#f8bbd0"/></svg>
+<div class="pair">
+<div class="en"><span class="tag">PINK OCTOBER</span><h1>Breast Cancer Awareness</h1><p>Early detection saves lives. Learn the facts, know the signs, and share your story.</p></div>
+<div class="ar"><span class="tag">أكتوبر الوردي</span><h1>التوعية بسرطان الثدي</h1><p>الكشف المبكر ينقذ الأرواح. تعرّف على الحقائق، واعرف العلامات، وشاركنا قصتك.</p></div>
+</div>
+</header>
+
+<section class="card">
+<div class="pair">
+<div class="en"><h2>What is breast cancer?</h2><p>Breast cancer happens when cells in the breast start growing out of control and form a tumour. It is the most common cancer among women worldwide. Men can get it too, though it is rare (about 1 in 100 cases).</p><p>Most breast lumps are not cancer, but every new lump or change should be checked by a doctor.</p></div>
+<div class="ar"><h2>ما هو سرطان الثدي؟</h2><p>سرطان الثدي هو نمو غير طبيعي وخارج عن السيطرة لخلايا الثدي يكوّن ورماً. وهو أكثر أنواع السرطان شيوعاً بين النساء في العالم. ويمكن أن يصيب الرجال أيضاً لكنه نادر (حوالي حالة من كل 100).</p><p>معظم كتل الثدي ليست سرطانية، لكن أي كتلة أو تغيّر جديد يجب أن يفحصه الطبيب.</p></div>
+</div>
+<div class="stats" style="margin-top:16px">
+<div class="stat"><b>2.3M</b><span>new cases worldwide in 2022</span><span class="arl">حالة جديدة حول العالم في 2022</span></div>
+<div class="stat"><b>1 in 20</b><span>women will be diagnosed in their lifetime</span><span class="arl">امرأة من كل 20 تُشخَّص خلال حياتها</span></div>
+<div class="stat"><b>90%+</b><span>survival when found early</span><span class="arl">نسبة الشفاء عند الاكتشاف المبكر</span></div>
+</div>
+<p class="note">Source / المصدر: WHO &amp; IARC, 2025</p>
+</section>
+
+<section class="art">
+<figure><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" fill="#fff"/><path d="M60 22c-11 0-18 10-18 21 0 10 6 18 13 28L38 104l11 4 11-22 11 22 11-4-17-33c7-10 13-18 13-28 0-11-7-21-18-21zm0 10c6 0 8 6 8 11 0 6-3 12-8 19-5-7-8-13-8-19 0-5 2-11 8-11z" fill="#e91e63"/></svg><figcaption>Hope<span class="a">الأمل</span></figcaption></figure>
+<figure><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" fill="#fff"/><g fill="#f48fb1"><ellipse cx="60" cy="38" rx="12" ry="18"/><ellipse cx="60" cy="82" rx="12" ry="18"/><ellipse cx="38" cy="60" rx="18" ry="12"/><ellipse cx="82" cy="60" rx="18" ry="12"/></g><g fill="#ec407a"><ellipse cx="44" cy="44" rx="10" ry="15" transform="rotate(-45 44 44)"/><ellipse cx="76" cy="44" rx="10" ry="15" transform="rotate(45 76 44)"/><ellipse cx="44" cy="76" rx="10" ry="15" transform="rotate(45 44 76)"/><ellipse cx="76" cy="76" rx="10" ry="15" transform="rotate(-45 76 76)"/></g><circle cx="60" cy="60" r="10" fill="#880e4f"/></svg><figcaption>Strength<span class="a">القوة</span></figcaption></figure>
+<figure><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" fill="#fff"/><path d="M60 92S28 72 28 50c0-11 8-19 18-19 6 0 11 3 14 8 3-5 8-8 14-8 10 0 18 8 18 19 0 22-32 42-32 42z" fill="#e91e63"/></svg><figcaption>Support<span class="a">الدعم</span></figcaption></figure>
+</section>
+
+<section class="card">
+<div class="pair">
+<div class="en"><h2>Warning signs</h2><p>See a doctor if you notice any of these:</p><div class="chips"><span class="chip">A new lump in the breast or armpit</span><span class="chip">Change in size or shape</span><span class="chip">Dimpling or puckering of the skin</span><span class="chip">Redness or scaly skin</span><span class="chip">Nipple turning inward</span><span class="chip">Unusual nipple discharge</span><span class="chip">Pain that does not go away</span></div></div>
+<div class="ar"><h2>العلامات التحذيرية</h2><p>راجع الطبيب إذا لاحظت أياً من التالي:</p><div class="chips"><span class="chip">كتلة جديدة في الثدي أو تحت الإبط</span><span class="chip">تغيّر في حجم الثدي أو شكله</span><span class="chip">انكماش أو تجعّد في الجلد</span><span class="chip">احمرار أو تقشّر الجلد</span><span class="chip">انقلاب الحلمة للداخل</span><span class="chip">إفرازات غير طبيعية من الحلمة</span><span class="chip">ألم مستمر لا يزول</span></div></div>
+</div>
+</section>
+
+<section class="card">
+<div class="sectionhead"><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" fill="currentColor"/><path d="M8 12l3 3 5-6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
+<div class="pair">
+<div class="en"><h2>Protective habits</h2><ul><li>Keep a healthy weight</li><li>Be active: at least 30 minutes of movement most days</li><li>Eat plenty of vegetables, fruit and whole grains; cut down on processed and fried food</li><li>Do not smoke, and avoid alcohol</li><li>Breastfeeding lowers the risk for mothers</li><li>Talk to a doctor before long-term hormone therapy</li><li>Know your family history and tell your doctor</li></ul></div>
+<div class="ar"><h2>ممارسات للوقاية</h2><ul><li>المحافظة على وزن صحي</li><li>النشاط البدني: 30 دقيقة حركة على الأقل معظم أيام الأسبوع</li><li>الإكثار من الخضار والفواكه والحبوب الكاملة، والتقليل من الأطعمة المصنّعة والمقلية</li><li>الامتناع عن التدخين والكحول</li><li>الرضاعة الطبيعية تقلل الخطر عند الأمهات</li><li>استشارة الطبيب قبل استخدام العلاج الهرموني لفترات طويلة</li><li>معرفة التاريخ العائلي وإبلاغ الطبيب به</li></ul></div>
+</div>
+</section>
+
+<section class="card">
+<div class="sectionhead"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M15 15l6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+<div class="pair">
+<div class="en"><h2>Early detection</h2><table class="sched"><tbody><tr><td>Monthly</td><td>Breast self-exam: look in the mirror and feel for any changes, a few days after your period</td></tr><tr><td>Age 20–39</td><td>Clinical breast exam by a doctor every 3 years</td></tr><tr><td>Age 40+</td><td>Mammogram every 2 years (UAE health guidelines)</td></tr><tr><td>High risk</td><td>Strong family history? Ask your doctor about starting earlier</td></tr></tbody></table><p style="margin-top:10px">Free screening is offered across the UAE during Pink October by Pink Caravan.</p></div>
+<div class="ar"><h2>الكشف المبكر</h2><table class="sched"><tbody><tr><td>شهرياً</td><td>الفحص الذاتي: النظر في المرآة وتحسس أي تغيّر، بعد الدورة الشهرية بأيام</td></tr><tr><td>من 20 إلى 39</td><td>فحص سريري عند الطبيب كل 3 سنوات</td></tr><tr><td>من 40 فما فوق</td><td>تصوير الثدي بالأشعة (الماموغرام) كل سنتين حسب الإرشادات الصحية في الإمارات</td></tr><tr><td>الخطر المرتفع</td><td>إذا كان هناك تاريخ عائلي قوي، اسأل الطبيب عن البدء مبكراً</td></tr></tbody></table><p style="margin-top:10px">تقدم القافلة الوردية فحوصات مجانية في مختلف إمارات الدولة خلال أكتوبر الوردي.</p></div>
+</div>
+</section>
+
+<section class="card">
+<div class="pair">
+<div class="en"><h2>Health organizations</h2>
+<div class="linkhead">Global</div>
+<div class="links">
+<a href="https://www.who.int/news-room/fact-sheets/detail/breast-cancer" target="_blank">World Health Organization <small>who.int</small></a>
+<a href="https://www.who.int/initiatives/global-breast-cancer-initiative" target="_blank">WHO Global Breast Cancer Initiative <small>who.int</small></a>
+<a href="https://www.cancer.org/cancer/types/breast-cancer.html" target="_blank">American Cancer Society <small>cancer.org</small></a>
+<a href="https://www.nationalbreastcancer.org" target="_blank">National Breast Cancer Foundation <small>nationalbreastcancer.org</small></a>
+</div>
+<div class="linkhead">UAE</div>
+<div class="links">
+<a href="https://www.pinkcaravan.ae" target="_blank">Pink Caravan <small>pinkcaravan.ae</small></a>
+<a href="https://www.focp.ae" target="_blank">Friends of Cancer Patients <small>focp.ae</small></a>
+<a href="https://mohap.gov.ae" target="_blank">Ministry of Health and Prevention <small>mohap.gov.ae</small></a>
+<a href="https://www.adphc.gov.ae" target="_blank">Abu Dhabi Public Health Centre <small>adphc.gov.ae</small></a>
+</div></div>
+<div class="ar"><h2>المنظمات الصحية</h2>
+<div class="linkhead">عالمية</div>
+<div class="links">
+<a href="https://www.who.int/ar/news-room/fact-sheets/detail/breast-cancer" target="_blank">منظمة الصحة العالمية <small>who.int</small></a>
+<a href="https://www.who.int/initiatives/global-breast-cancer-initiative" target="_blank">المبادرة العالمية لسرطان الثدي <small>who.int</small></a>
+<a href="https://www.cancer.org/cancer/types/breast-cancer.html" target="_blank">جمعية السرطان الأمريكية <small>cancer.org</small></a>
+<a href="https://www.nationalbreastcancer.org" target="_blank">المؤسسة الوطنية لسرطان الثدي <small>nationalbreastcancer.org</small></a>
+</div>
+<div class="linkhead">محلية (الإمارات)</div>
+<div class="links">
+<a href="https://www.pinkcaravan.ae" target="_blank">القافلة الوردية <small>pinkcaravan.ae</small></a>
+<a href="https://www.focp.ae" target="_blank">جمعية أصدقاء مرضى السرطان <small>focp.ae</small></a>
+<a href="https://mohap.gov.ae" target="_blank">وزارة الصحة ووقاية المجتمع <small>mohap.gov.ae</small></a>
+<a href="https://www.adphc.gov.ae" target="_blank">مركز أبوظبي للصحة العامة <small>adphc.gov.ae</small></a>
+</div></div>
+</div>
+</section>
+
+<section class="card">
+<div class="pair">
+<div class="en"><h2>Share a real story</h2><p>Do you know a real story about breast cancer, a survivor, a family member, or your own experience? Write it here. <span class="optional">Optional</span></p></div>
+<div class="ar"><h2>شاركنا قصة واقعية</h2><p>هل تعرف قصة واقعية عن سرطان الثدي؟ قصة ناجية، أو أحد من العائلة، أو تجربتك الشخصية؟ اكتبها هنا. <span class="optional">اختياري</span></p></div>
+</div>
+<p style="text-align:center;margin-top:16px"><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdxnpzQeQLjiJt7cg6gK1S2auDWmkuz76IX_tt1u96uEOm5vQ/viewform" target="_blank">اكتب قصتك هنا / Write your story here</a></p>
+</section>
+
+<footer>
+<p>Early detection saves lives. Check yourself, and remind the women you love.</p>
+<p class="a" dir="rtl">الكشف المبكر ينقذ الحياة. افحصي نفسك، وذكّري من تحبين.</p>
+</footer>
+</div>
+</body></html>
